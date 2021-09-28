@@ -1,0 +1,16 @@
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0, 133, 213, 0.95);
+    color:white;
+    min-height:50px;
+    text-align:center;
+}
+
+.footerContainer
+{
+padding:10px;
+}

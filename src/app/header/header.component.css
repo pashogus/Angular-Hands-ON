@@ -1,0 +1,51 @@
+h1
+{
+    margin-top:0;
+    margin-bottom: 10px;
+    text-align: center;
+  
+}
+
+header{
+    background-color:rgba(0, 133, 213, 0.95);
+    color:white;
+}
+
+
+.site-nav a{
+    display:block;
+    text-decoration: none;
+    padding:10px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+
+.site-nav ul li{
+    list-style: none;
+    float:left;
+    margin-right:5px;
+}
+
+.bodyContainer
+{
+    padding-left: 40px;
+    padding-right:40px;
+    margin : 0 auto;
+}
+
+.group:before,
+.group:after{
+    content:"";
+    display:table;
+}
+
+.group:after{
+    clear:both;
+}
+
+.group{
+    zoom:1;
+}
+
+
+

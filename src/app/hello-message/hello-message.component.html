@@ -1,0 +1,79 @@
+<!--
+<div>
+    <p>{{this.welcomemessage}}</p>
+</div>
+-->
+<!--outer row-->
+<div class="row">
+    <section>
+        <!--two column start 1-->
+        <div class="col-md-7 sec-1 ">
+
+            <!--inner row 1-->
+          <div class=" parent-flex-1"> 
+
+                <!--inner column  1 1-->
+                <div class=" desc-styling-1-1 child-flex-1">
+                    <h4>Primary Approver</h4>
+                    <p>The one who Needs to approve the Publication</p>
+                </div>
+
+                <!--inner column  1 2-->
+                <!--usig flex box inside grid , to align the div sections aligned accroding to the other div
+                without htis flex, one div width and hieght  is calcualted individually
+            based on the content-->
+                <div class="desc-styling-1-2 child-flex-1">
+                    <h4>Backup Approver</h4>
+                    <p>The one who will  approve the Publication in the absence of Primary Approver
+                    </p>
+                </div>
+
+                <!--inner row 1-->
+      </div> 
+
+
+            <!--inner row 2-->
+       <div class="row parent-flex-2"> 
+                <!--inner column  2 1-->
+                <div class=" desc-styling-2-1 child-flex-2">
+                 
+                    <h4>Primary Approver Secondary</h4>
+                    <p>The one who Needs to approve the  Secondary Publication</p>
+                </div>
+                <!--inner column  2 2-->
+                <div class=" desc-styling-2-2 child-flex-2">
+                    <h4>Backup Approver Secondary</h4>
+                    <p>The one who will  approve the Secondary Publication in the absence of Primary Secondary Approver</p>
+                </div>
+
+            
+     </div> 
+           
+
+            <!--inner row 2-->
+        </div>
+    </section>
+
+
+    <!--two column start 2-->
+    <div class="col-md-5 sec-2 form-alignment">
+           <h4>Sign in to get Approvers List </h4>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <div class="form-group">
+                <label for="username">UserName:</label>
+                <input type="text" ngModel class="form-control" id="username" name="username" placeholder="User Name">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="text" ngModel class="form-control" id="password" name="password" placeholder="Password">
+
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Logout</button>
+        </form>
+
+
+        <!--two column start 2-->
+    </div>
+    <!--Outer row-->
+</div>

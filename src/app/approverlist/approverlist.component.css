@@ -1,0 +1,51 @@
+section{
+    margin: 0 auto;
+    padding-top: 32px;
+    max-width: 640px;
+    width: 100%;
+}
+
+table {
+    width:auto;
+    height:auto;
+    margin-top: 50px;
+}
+
+table th,td
+{
+    border:1px solid #367ff5 ;
+    padding : 10px;
+    vertical-align: bottom;
+}
+
+table tbody tr:nth-child(even)
+{
+    background-color:#d5e2f7;
+}
+
+table th{
+    text-align: left;
+    background-color:#367ff5 ;
+
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.hidelabel
+{
+    /*these two are enough */
+    position:absolute;
+    visibility:hidden;
+     /*these two are enough */
+    width:0;
+    height:0;
+    overflow:hidden;
+   
+    
+
+}
+

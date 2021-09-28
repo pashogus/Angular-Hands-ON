@@ -1,0 +1,36 @@
+
+<div class="container">
+
+<form>
+    
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="form-group">
+            <!--#name - template reference variable-->
+        <label for="ingredientName" >Name</label>
+        <input #nameref type="text" class="form-control" id="ingredientName" placeholder="Ingredient Name">
+      </div>
+      </div>
+   
+      <div class="col-xs-4">
+      <div class="form-group">
+        <!--#quantity is the templatet reference variable-->
+        <label for="quantity" >Quantity</label>
+        <input  #quantity type="text" class="form-control" id="quantity" placeholder="Quantity">
+      
+    </div>
+    </div>
+  </div>
+      <button type="button" class="btn btn-primary" (click)="addIngredient()">Add</button>
+      <button type="button" class="btn btn-danger"  >Delete</button>
+</form>
+<hr>
+<app-shopping-item *ngFor="let ingredient of shopList"
+[ingredientRecieved]="ingredient"></app-shopping-item>
+
+<hr>
+
+
+
+      <!-- Content here -->
+    </div>

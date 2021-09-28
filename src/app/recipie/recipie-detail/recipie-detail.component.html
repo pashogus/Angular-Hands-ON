@@ -1,0 +1,43 @@
+<p>recipie-detail works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <img src="" alt=" " class="img-responsive">
+    </div>
+</div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>{{recipieDetail.name}}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+         
+            <div class="btn-group" appdropdown>
+                <button type="button" class="btn btn-primary dropdown-toggle " 
+                data-toggle="dropdown">Manage <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-list"><a style="cursor: pointer" (click)="addtoShoppingList()">
+                        Add to Shopping List</a></li>
+                    <li class="dropdown-list"><a href="#">Remove from List</a></li>
+                    </ul>
+                    
+            </div>
+       
+    </div>
+    </div>
+<div class="row">
+    <div class="col-xs-12">
+        {{recipieDetail.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <ul class="list-group"></ul>
+        <li class="list-group-item"
+        *ngFor ="let ing of recipieDetail.ingredient">
+       {{ing.ingredientname}} - {{ing.quantity}}
+        </li>
+    </div>
+</div>
+
+

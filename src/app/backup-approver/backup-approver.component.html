@@ -1,0 +1,27 @@
+<section *ngIf=isLoading>
+<div class="form-group">
+    <label for="search-text" class="hidelabel">Filter Text</label>
+    <input type="text" class="form-control" id="search-text" aria-describedby="search-text" 
+      [(ngModel)]="searchText" placeholder="Enter text to filter" 
+      autofocus>
+  </div>
+<div class="body">
+    <table class="center">
+        <thead>
+            <tr>
+            <th *ngFor ="let col of column"> 
+                {{col}}
+            </th>
+            <tr> 
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of backup_approver_list | filter:searchText">
+                <td *ngFor="let col of index">
+                  {{user[col]}}
+                </td>
+              </tr>
+        </tbody>
+    </table>
+</div>
+</section>
